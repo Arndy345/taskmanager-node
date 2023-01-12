@@ -5,8 +5,11 @@ const TaskSchema = new Schema({
 	name: {
 		type: String,
 		required: [true, "name is required"],
-    trim:true,
-    maxlength:[20, "name cannot be more than 20"]
+		trim: true,
+		maxlength: [
+			20,
+			"name cannot be more than 20",
+		],
 	},
 	completed: {
 		type: Boolean,
