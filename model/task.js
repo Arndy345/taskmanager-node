@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 const TaskSchema = new Schema({
 	name: {
 		type: String,
-		required: true,
+		required: [true, "name is required"],
+    trim:true,
+    maxlength:[20, "name cannot be more than 20"]
 	},
 	completed: {
 		type: Boolean,

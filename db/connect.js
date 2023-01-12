@@ -5,6 +5,7 @@ dotenv.config();
 const options = {
 	useUnifiedTopology: true,
 	useNewUrlParser: true,
+	useFindAndModify: false,
 };
 
 const connectDB = async () => {
